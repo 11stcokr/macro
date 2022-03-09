@@ -290,7 +290,7 @@ namespace macro
                         this.uslog = this.fileService.logMsg("id : " + this.id_text_box.Text + ", pw : " + this.pw_text_box.Text);
                         this.fileService.userSave(this.uslog);
                     }
-                    element = this.driver.FindElement(By.XPath("loginbutton"));
+                    element = this.driver.FindElement(By.XPath("//*[@id='loginbutton']"));
                     element.Click();
                     this.sleep(1000);
                 }
